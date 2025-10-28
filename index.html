@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SENPAI | Landing</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1 class="logo">SENPAI</h1>
+    <button id="vipBtn" class="vip-btn">VIP</button>
+  </header>
+
+  <!-- Signup Form -->
+  <section class="signup-section" id="signupSection">
+    <h2>Signup</h2>
+    <form id="signupForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="number" id="age" placeholder="Age" required>
+      <input type="text" id="class" placeholder="Class" required>
+      <input type="text" id="address" placeholder="Address" required>
+      <input type="text" id="school" placeholder="School/College" required>
+      <input type="date" id="birthdate" placeholder="Birth Date" required>
+      <input type="text" id="hobby" placeholder="Hobby" required>
+      <textarea id="bio" placeholder="Bio"></textarea>
+      <input type="text" id="ig" placeholder="Instagram Link">
+      <button type="submit" class="submit-btn">Sign Up</button>
+    </form>
+    <p id="signupMsg"></p>
+  </section>
+
+  <!-- Login Form -->
+  <section class="login-section" id="loginSection">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="loginName" placeholder="Name" required>
+      <button type="submit" class="submit-btn">Login</button>
+    </form>
+    <p id="loginMsg"></p>
+  </section>
+</div>
+
+<script src="js/localshot.js"></script>
+<script src="js/login.js"></script>
+<script src="js/vip.js"></script>
+</body>
+</html>

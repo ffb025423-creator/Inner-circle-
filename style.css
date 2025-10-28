@@ -1,0 +1,81 @@
+/* Glassy, Blur & Animation Styles */
+body {
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #ffe0b2);
+  color:#333;
+}
+
+.container, .profile-container, .vip-container {
+  width:90%;
+  max-width:900px;
+  margin:50px auto;
+  padding:20px;
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.3);
+  border-radius:15px;
+  box-shadow:0 8px 32px rgba(0,0,0,0.2);
+  animation:fadeIn 1s ease-in-out;
+}
+
+header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+h1.logo {
+  font-size:2rem;
+  font-weight:bold;
+  color:#ff9800;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.vip-btn {
+  padding:10px 20px;
+  background: gold;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:bold;
+  transition: all 0.3s ease;
+}
+
+.vip-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px gold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0%{opacity:0; transform:translateY(-20px);}
+  100%{opacity:1; transform:translateY(0);}
+}
+.submit-btn {
+  padding:10px 20px;
+  background: #ff7043;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  transition: all 0.3s ease;
+}
+.submit-btn:hover{
+  transform:scale(1.05);
+  box-shadow: 0 0 10px #ff7043;
+}
+
+input, textarea{
+  width:100%;
+  padding:10px;
+  margin:8px 0;
+  border-radius:8px;
+  border:1px solid #ccc;
+  transition: all 0.3s ease;
+}
+input:focus, textarea:focus{
+  outline:none;
+  border:1px solid #ff9800;
+  box-shadow: 0 0 8px #ff9800;
+}

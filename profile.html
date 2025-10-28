@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SENPAI | Profile</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="profile-container">
+  <header>
+    <h1 class="logo">SENPAI Profile</h1>
+    <button id="logoutBtn" class="vip-btn">Logout</button>
+  </header>
+
+  <div class="profile-card" id="profileCard">
+    <h2 id="profileName"></h2>
+    <p>Age: <span id="profileAge"></span></p>
+    <p>Class: <span id="profileClass"></span></p>
+    <p>Address: <span id="profileAddress"></span></p>
+    <p>School/College: <span id="profileSchool"></span></p>
+    <p>Birth Date: <span id="profileBirthdate"></span></p>
+    <p>Hobby: <span id="profileHobby"></span></p>
+    <p>Bio: <span id="profileBio"></span></p>
+    <p>IG: <a href="#" target="_blank" id="profileIG">Visit</a></p>
+  </div>
+
+  <section class="edit-profile">
+    <h2>Edit Profile</h2>
+    <form id="editProfileForm">
+      <input type="number" id="editAge" placeholder="Age">
+      <input type="text" id="editClass" placeholder="Class">
+      <input type="text" id="editSchool" placeholder="School/College">
+      <input type="text" id="editIG" placeholder="Instagram Link">
+      <textarea id="editBio" placeholder="Bio"></textarea>
+      <button type="submit" class="submit-btn">Save Changes</button>
+    </form>
+  </section>
+</div>
+
+<script src="js/localshot.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>
